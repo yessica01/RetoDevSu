@@ -29,6 +29,7 @@ public class InicioDeSesionStepDefinitions {
     @Before
     public void setUp() {
         actor.can(BrowseTheWeb.with(browser));
+        browser.manage().window().maximize();
     }
 
     @Dado("que el usuario visita el sitio web de la empresa saucedemo.com")
