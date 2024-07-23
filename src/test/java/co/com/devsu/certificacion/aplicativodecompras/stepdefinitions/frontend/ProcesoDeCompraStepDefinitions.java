@@ -5,7 +5,9 @@ import co.com.devsu.certificacion.aplicativodecompras.tasks.frontend.CancelarCom
 import co.com.devsu.certificacion.aplicativodecompras.tasks.frontend.ConsultarCarritoDe;
 import co.com.devsu.certificacion.aplicativodecompras.tasks.frontend.ContinuarCompra;
 import co.com.devsu.certificacion.aplicativodecompras.tasks.frontend.DiligenciarFormularioDe;
+import co.com.devsu.certificacion.aplicativodecompras.tasks.frontend.FinalizarCompraDe;
 import co.com.devsu.certificacion.aplicativodecompras.tasks.frontend.Verificar;
+import co.com.devsu.certificacion.aplicativodecompras.userinterface.PaginaDatosDeEnvio;
 import co.com.devsu.certificacion.aplicativodecompras.userinterface.PaginaInicioDeSesion;
 import co.com.devsu.certificacion.aplicativodecompras.userinterface.PaginaProductos;
 import co.com.devsu.certificacion.aplicativodecompras.userinterface.PaginaTuCarrito;
@@ -34,8 +36,6 @@ public class ProcesoDeCompraStepDefinitions {
     private WebDriver browser;
     private final Actor actor = Actor.named("usuario");
     private PaginaInicioDeSesion paginaInicioDeSesion;
-    Random random = new Random();
-    int itemProducto = random.nextInt(5) + 1;
 
     @Before
     public void setUp() {
@@ -82,6 +82,8 @@ public class ProcesoDeCompraStepDefinitions {
 
     @Cuando("continua con la compra")
     public void continuaConLaCompra() {
+        Random random = new Random();
+        int itemProducto = random.nextInt(5) + 1;
         actor.attemptsTo(ContinuarCompra.enProceso(PaginaTuCarrito.BOTON_CONTINUAR_COMPRA),
                 AgregarProducto.alCarrito(itemProducto));
     }
@@ -99,4 +101,16 @@ public class ProcesoDeCompraStepDefinitions {
         actor.should(seeThat(WebElementQuestion.the(PaginaProductos.BOTON_REMOVE), WebElementStateMatchers.isVisible())
                 .orComplainWith(AssertionError.class, BOTON_REMOVE_NO_PRESENTE));
     }
+
+    @Cuando("completa la compra {string} {string} {string}")
+    public void completaLaCompra(String primerNombre, String segundoNombre, String codigoPostal) {
+        actor.attemptsTo(DiligenciarFormularioDe.datosDeEnvio(primerNombre, segundoNombre, codigoPostal),
+                FinalizarCompraDe.productos());
+    }
+
+    @Entonces("se presenta pantalla de compra realizada correctamente")
+    public void sePresentaPantallaDeCompraRealizadaCorrectamente() {
+        actor.should(seeThat(WebElementQuestion.the(PaginaDatosDeEnvio.ORDEN_COMPLETADA), WebElementStateMatchers.isVisible()));
+    }
+
 }
