@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Compra de un producto en la página wen oficial de Sauce" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-07-23T19:13:09" hostname="PSOFKA0015" time="51.936">
+  <properties/>
+  <testcase name="001 - Validar realización de una compra exitosa #1" classname="Compra de un producto en la página wen oficial de Sauce" time="20.135"/>
+  <testcase name="001 - Validar realización de una compra exitosa #2" classname="Compra de un producto en la página wen oficial de Sauce" time="31.801"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[jul. 23, 2024 2:13:17 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
+jul. 23, 2024 2:13:39 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
+]]></system-err>
+</testsuite>
