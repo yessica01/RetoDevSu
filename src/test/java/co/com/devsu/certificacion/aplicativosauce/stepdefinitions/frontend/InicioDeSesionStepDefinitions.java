@@ -1,4 +1,4 @@
-package co.com.devsu.certificacion.aplicativosauce.stepdefinitions;
+package co.com.devsu.certificacion.aplicativosauce.stepdefinitions.frontend;
 
 import co.com.devsu.certificacion.aplicativosauce.questions.LaPaginaEsperada;
 import co.com.devsu.certificacion.aplicativosauce.tasks.AbrirElNavegador;
@@ -37,7 +37,7 @@ public class InicioDeSesionStepDefinitions {
         actor.wasAbleTo(AbrirElNavegador.en(paginaInicioDeSesion));
     }
 
-    @Cuando("el usuario inicia sesion con usuario y contraseña del perfil {string} {string}")
+    @Cuando("inicia sesion con usuario y contraseña del perfil {string} {string}")
     public void iniciaSesionConUsuarioYContrasenaDelPerfil(String posicionDeUsuarioEnPantalla, String datosCorrectos) {
         String usuariosDisponibles = String.valueOf(PaginaInicioDeSesion.NOMBRE_USUARIO.resolveFor(actor).getText());
         String claveDisponible = String.valueOf(PaginaInicioDeSesion.CLAVE.resolveFor(actor).getText());
