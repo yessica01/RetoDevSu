@@ -1,10 +1,10 @@
-package co.com.devsu.certificacion.aplicativosauce.stepdefinitions.frontend;
+package co.com.devsu.certificacion.aplicativodecompras.stepdefinitions.frontend;
 
-import co.com.devsu.certificacion.aplicativosauce.questions.LaPaginaEsperada;
-import co.com.devsu.certificacion.aplicativosauce.tasks.AbrirElNavegador;
-import co.com.devsu.certificacion.aplicativosauce.tasks.IngresarInformacionDe;
-import co.com.devsu.certificacion.aplicativosauce.userinterface.PaginaInicioDeSesion;
-import co.com.devsu.certificacion.aplicativosauce.utils.DatosDeInicioDeSesion;
+import co.com.devsu.certificacion.aplicativodecompras.questions.frontend.LaPaginaEsperada;
+import co.com.devsu.certificacion.aplicativodecompras.tasks.frontend.AbrirElNavegador;
+import co.com.devsu.certificacion.aplicativodecompras.tasks.frontend.IngresarInformacionDe;
+import co.com.devsu.certificacion.aplicativodecompras.userinterface.PaginaInicioDeSesion;
+import co.com.devsu.certificacion.aplicativodecompras.utils.frontend.DatosDeInicioDeSesion;
 import io.cucumber.java.Before;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
