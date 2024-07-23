@@ -2,7 +2,10 @@ package co.com.devsu.certificacion.aplicativodecompras.stepdefinitions.frontend;
 
 import co.com.devsu.certificacion.aplicativodecompras.questions.frontend.LaPaginaEsperada;
 import co.com.devsu.certificacion.aplicativodecompras.tasks.frontend.AbrirElNavegador;
+import co.com.devsu.certificacion.aplicativodecompras.tasks.frontend.AgregarProducto;
+import co.com.devsu.certificacion.aplicativodecompras.tasks.frontend.ConsultarCarritoDe;
 import co.com.devsu.certificacion.aplicativodecompras.tasks.frontend.IngresarInformacionDe;
+import co.com.devsu.certificacion.aplicativodecompras.tasks.frontend.Verificar;
 import co.com.devsu.certificacion.aplicativodecompras.userinterface.PaginaInicioDeSesion;
 import co.com.devsu.certificacion.aplicativodecompras.utils.frontend.DatosDeInicioDeSesion;
 import io.cucumber.java.Before;
@@ -23,7 +26,7 @@ public class InicioDeSesionStepDefinitions {
 
     @Managed(driver = "chrome")
     private WebDriver browser;
-    private final Actor actor = Actor.named("Actor");
+    private final Actor actor = Actor.named("usuario");
     private PaginaInicioDeSesion paginaInicioDeSesion;
 
     @Before

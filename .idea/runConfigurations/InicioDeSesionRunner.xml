@@ -3,8 +3,8 @@
     <module name="RetoDevsu.test" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
     <option name="ALTERNATIVE_JRE_PATH" value="11" />
-    <option name="PACKAGE_NAME" value="co.com.devsu.certificacion.aplicativosauce.runners" />
-    <option name="MAIN_CLASS_NAME" value="co.com.devsu.certificacion.aplicativosauce.runners.InicioDeSesionRunner" />
+    <option name="PACKAGE_NAME" value="co.com.devsu.certificacion.aplicativodecompras.runners.frontend" />
+    <option name="MAIN_CLASS_NAME" value="co.com.devsu.certificacion.aplicativodecompras.runners.frontend.InicioDeSesionRunner" />
     <option name="METHOD_NAME" value="" />
     <option name="TEST_OBJECT" value="class" />
     <method v="2">
