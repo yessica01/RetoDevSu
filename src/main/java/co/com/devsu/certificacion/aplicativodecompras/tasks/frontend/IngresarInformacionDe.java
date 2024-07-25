@@ -1,24 +1,23 @@
 package co.com.devsu.certificacion.aplicativodecompras.tasks.frontend;
 
 import co.com.devsu.certificacion.aplicativodecompras.userinterface.PaginaInicioDeSesion;
-import net.serenitybdd.annotations.Step;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-
+import net.thucydides.core.annotations.Step;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-
 
 public class IngresarInformacionDe implements Task {
     private final String usuario;
     private final String clave;
 
-    public IngresarInformacionDe(String usuario, String clave){
-      this.usuario = usuario;
-      this.clave = clave;
+    public IngresarInformacionDe(String usuario, String clave) {
+        this.usuario = usuario;
+        this.clave = clave;
     }
+
     @Override
 
     @Step("{0} Ingresar información para inicio de sesion")

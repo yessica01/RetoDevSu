@@ -1,0 +1,18 @@
+# RetoDevSu
+
+Hallazgos en el proceso de pruebas funcionales E2E.
+
+Aplicativos web Saucedemo: Se identifica un bug en el usuario de prueba problem_user, al momento de agregar productos al carrito
+ya que algunos de estos no se lista en la pantalla de consulta del carrito.
+
+Desde el usuario performance_glitch_user se evidencias problemas de performance ya que las respuestas a los consumos de la pagina son lentos.
+Se recomienda someter este aplicativo a pruebas de rendimiento por el equipo encargado, para identificar el problema.
+
+
+Aplicativos API Petstores: Se identifica que al momento de ingresar un usuario nuevo este proceso es exitoso.
+Por el contrario cuando se realizan las operaciones (UPDATE, GET, DELETE) se presenta el error 404 donde se indica que
+no se encontró el usuario registrado previamente.
+
+Si se realiza el consumo directamente desde Postman, los consumos son exitosos, pero desde el robot no fue posible.
+Se debe analizar con el equipo si existe alguna restricción o limitación en el ambiente de pruebas para estas operaciones
+o si por el contrario, se trata de un bug que debe ser reportado a desarrollo.

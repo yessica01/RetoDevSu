@@ -11,14 +11,16 @@ import co.com.devsu.certificacion.aplicativodecompras.userinterface.PaginaDatosD
 import co.com.devsu.certificacion.aplicativodecompras.userinterface.PaginaInicioDeSesion;
 import co.com.devsu.certificacion.aplicativodecompras.userinterface.PaginaProductos;
 import co.com.devsu.certificacion.aplicativodecompras.userinterface.PaginaTuCarrito;
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Entonces;
-import net.serenitybdd.annotations.Managed;
+import net.serenitybdd.core.Serenity;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 import net.serenitybdd.screenplay.questions.WebElementQuestion;
+import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
 import java.util.Random;
@@ -38,7 +40,7 @@ public class ProcesoDeCompraStepDefinitions {
     private PaginaInicioDeSesion paginaInicioDeSesion;
 
     @Before
-    public void setUp() {
+    public void setTheStage() {
         actor.can(BrowseTheWeb.with(browser));
         browser.manage().window().maximize();
     }
@@ -113,4 +115,8 @@ public class ProcesoDeCompraStepDefinitions {
         actor.should(seeThat(WebElementQuestion.the(PaginaDatosDeEnvio.ORDEN_COMPLETADA), WebElementStateMatchers.isVisible()));
     }
 
+    @After
+    public void closeDriver() {
+        Serenity.getDriver().quit();
+    }
 }

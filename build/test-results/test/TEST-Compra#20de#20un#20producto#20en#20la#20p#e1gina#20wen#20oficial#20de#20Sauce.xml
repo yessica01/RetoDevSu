@@ -1,12 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Compra de un producto en la página wen oficial de Sauce" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-07-23T19:13:09" hostname="PSOFKA0015" time="51.936">
+<testsuite name="Compra de un producto en la página wen oficial de Sauce" tests="9" skipped="0" failures="1" errors="0" timestamp="2024-07-25T05:44:36" hostname="PSOFKA0015" time="248.523">
   <properties/>
-  <testcase name="001 - Validar realización de una compra exitosa #1" classname="Compra de un producto en la página wen oficial de Sauce" time="20.135"/>
-  <testcase name="001 - Validar realización de una compra exitosa #2" classname="Compra de un producto en la página wen oficial de Sauce" time="31.801"/>
+  <testcase name="001 - Validar realización de una compra exitosa #1" classname="Compra de un producto en la página wen oficial de Sauce" time="48.164"/>
+  <testcase name="001 - Validar realización de una compra exitosa #2" classname="Compra de un producto en la página wen oficial de Sauce" time="29.518"/>
+  <testcase name="001 - Validar que se visualice el carrito de compras #1" classname="Compra de un producto en la página wen oficial de Sauce" time="8.411"/>
+  <testcase name="001 - Validar que se visualice el carrito de compras #2" classname="Compra de un producto en la página wen oficial de Sauce" time="9.253"/>
+  <testcase name="002 - Validar que sea posible agregar productos al carrito #1" classname="Compra de un producto en la página wen oficial de Sauce" time="12.977"/>
+  <testcase name="002 - Validar que sea posible agregar productos al carrito #2" classname="Compra de un producto en la página wen oficial de Sauce" time="16.205">
+    <failure message="java.lang.AssertionError: Error al intentar validar nombre de producto en pantalla, no está presente - &#13;&#10;Expected: an element that is visible&#13;&#10;     but: no matching element found by [Identificador del producto a elegir located with: //a[@id='item_1_title_link']]" type="java.lang.AssertionError">java.lang.AssertionError: Error al intentar validar nombre de producto en pantalla, no está presente - 
+Expected: an element that is visible
+     but: no matching element found by [Identificador del producto a elegir located with: //a[@id='item_1_title_link']]
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:353)
+	at co.com.devsu.certificacion.aplicativodecompras.stepdefinitions.frontend.ProcesoDeCompraStepDefinitions.sePresentanPantallaConLaInformacionDeLosProductosAgregados(ProcesoDeCompraStepDefinitions.java:80)
+	at ✽.se presentan pantalla con la información de los productos agregados &quot;1&quot;(file:///C:/Users/yessica.rodriguez/Desktop/RetoComprasDevsu/RetoDevSu/src/test/resources/features/frontend/proceso_de_compra_sauce.feature:28)
+</failure>
+  </testcase>
+  <testcase name="003 - Validar diligenciamineto de formulario y cancelación de una compra antes de realizar el pago #1" classname="Compra de un producto en la página wen oficial de Sauce" time="17.26"/>
+  <testcase name="003 - Validar diligenciamineto de formulario y cancelación de una compra antes de realizar el pago #2" classname="Compra de un producto en la página wen oficial de Sauce" time="37.414"/>
+  <testcase name="004 - Validar opción seguir comprando" classname="Compra de un producto en la página wen oficial de Sauce" time="16.11"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[jul. 23, 2024 2:13:17 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
-jul. 23, 2024 2:13:39 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 126, returning the closest version; found: 125; Please update to a Selenium version that supports CDP version 126
+  <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 54712
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1721886279.626][WARNING]: This version of ChromeDriver has not been tested with Chrome version 126.
+jul. 25, 2024 12:44:40 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+jul. 25, 2024 12:44:40 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+jul. 25, 2024 12:44:40 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+jul. 25, 2024 12:44:40 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.4.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 60309
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1721886327.085][WARNING]: This version of ChromeDriver has not been tested with Chrome version 126.
+jul. 25, 2024 12:45:27 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+jul. 25, 2024 12:45:28 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+jul. 25, 2024 12:45:28 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+jul. 25, 2024 12:45:28 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.4.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 57712
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1721886408.944][WARNING]: This version of ChromeDriver has not been tested with Chrome version 126.
+jul. 25, 2024 12:46:49 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+jul. 25, 2024 12:46:49 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+jul. 25, 2024 12:46:49 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+jul. 25, 2024 12:46:49 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.4.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 56993
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1721886417.344][WARNING]: This version of ChromeDriver has not been tested with Chrome version 126.
+jul. 25, 2024 12:46:57 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+jul. 25, 2024 12:46:57 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+jul. 25, 2024 12:46:57 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+jul. 25, 2024 12:46:57 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.4.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 56918
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1721886427.756][WARNING]: This version of ChromeDriver has not been tested with Chrome version 126.
+jul. 25, 2024 12:47:08 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+jul. 25, 2024 12:47:08 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+jul. 25, 2024 12:47:08 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+jul. 25, 2024 12:47:08 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.4.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 53656
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1721886439.749][WARNING]: This version of ChromeDriver has not been tested with Chrome version 126.
+jul. 25, 2024 12:47:20 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+jul. 25, 2024 12:47:20 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+jul. 25, 2024 12:47:20 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+jul. 25, 2024 12:47:20 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.4.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 53793
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1721886455.805][WARNING]: This version of ChromeDriver has not been tested with Chrome version 126.
+jul. 25, 2024 12:47:36 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+jul. 25, 2024 12:47:36 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+jul. 25, 2024 12:47:36 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+jul. 25, 2024 12:47:36 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.4.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 62403
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1721886473.372][WARNING]: This version of ChromeDriver has not been tested with Chrome version 126.
+jul. 25, 2024 12:47:53 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+jul. 25, 2024 12:47:53 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+jul. 25, 2024 12:47:53 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+jul. 25, 2024 12:47:53 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.4.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 50084
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1721886511.822][WARNING]: This version of ChromeDriver has not been tested with Chrome version 126.
+jul. 25, 2024 12:48:32 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+jul. 25, 2024 12:48:32 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 126, so returning the closest version found: a no-op implementation
+jul. 25, 2024 12:48:32 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 126.
+jul. 25, 2024 12:48:32 A. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.4.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
 </testsuite>

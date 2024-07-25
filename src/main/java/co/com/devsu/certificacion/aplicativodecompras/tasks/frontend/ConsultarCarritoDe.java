@@ -1,7 +1,7 @@
 package co.com.devsu.certificacion.aplicativodecompras.tasks.frontend;
 
 import co.com.devsu.certificacion.aplicativodecompras.userinterface.PaginaTuCarrito;
-import net.serenitybdd.annotations.Step;
+import net.thucydides.core.annotations.Step;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;

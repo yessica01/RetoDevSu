@@ -1,13 +1,12 @@
 package co.com.devsu.certificacion.aplicativodecompras.tasks.frontend;
 
-import net.serenitybdd.annotations.Step;
+import net.thucydides.core.annotations.Step;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.targets.Target;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-
 
 public class ContinuarCompra implements Task {
     private final Target btnContinuarCompra;

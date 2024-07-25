@@ -1,13 +1,12 @@
 package co.com.devsu.certificacion.aplicativodecompras.tasks.frontend;
 
 import co.com.devsu.certificacion.aplicativodecompras.userinterface.PaginaTuCarrito;
-import net.serenitybdd.annotations.Step;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
+import net.thucydides.core.annotations.Step;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-
 
 public class Verificar implements Task {
 
@@ -16,6 +15,7 @@ public class Verificar implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(PaginaTuCarrito.BOTON_CHECKOUT));
     }
+
     public static Verificar compra() {
         return instrumented(Verificar.class);
     }

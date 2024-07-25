@@ -7,4 +7,3 @@ public class PaginaTuCarrito {
     public static final Target BOTON_CANCELAR_COMPRA = Target.the("Botón para cancelar la compra").locatedBy("//button[@id='cancel']");
     public static final Target BOTON_CONTINUAR_COMPRA = Target.the("Botón para continuar con la compra").locatedBy("//button[@id='continue-shopping']");
 }
-

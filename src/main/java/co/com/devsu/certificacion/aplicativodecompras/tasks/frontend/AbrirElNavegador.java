@@ -1,6 +1,6 @@
 package co.com.devsu.certificacion.aplicativodecompras.tasks.frontend;
 
-import net.serenitybdd.annotations.Step;
+import net.thucydides.core.annotations.Step;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;

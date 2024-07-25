@@ -32,9 +32,9 @@ Característica: Compra de un producto en la página wen oficial de Sauce
       | 1      | 2                | S               |
       | 5      | 1                | S               |
 
-#Escenario negativo
-  @cancelarCompra
-  Esquema del escenario: 003 - Validar cancelación de una compra antes de realizar el pago
+#Escenario critico
+  @diligenciarFormulario
+  Esquema del escenario: 003 - Validar diligenciamineto de formulario y cancelación de una compra antes de realizar el pago
     Cuando inicia sesion con usuario y contraseña del perfil "<PERFIL>" "<DATOS_CORRECTOS>"
     Y agrega productos al carrito y lo verifica "<ITEM_DE_PRODUCTO>"
     Y cancela la compra "<PRIMER_NOMBRE>" "<SEGUNDO_NOMBRE>" "<CODIGO_POSTAL>"
