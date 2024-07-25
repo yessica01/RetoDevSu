@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Creación y consulta de un usuario en la tienda Petstore" tests="4" skipped="0" failures="3" errors="0" timestamp="2024-07-25T05:44:08" hostname="PSOFKA0015" time="14.834">
+  <properties/>
+  <testcase name="001 - Validar que se cree correctamente un nuevo usario desde el servicio API" classname="Creación y consulta de un usuario en la tienda Petstore" time="10.714"/>
+  <testcase name="002 - Validar que se pueda consultar correctamente un usario desde el servicio API" classname="Creación y consulta de un usuario en la tienda Petstore" time="1.553">
+    <failure message="java.lang.AssertionError: 1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:353)
+	at co.com.devsu.certificacion.aplicativodecompras.stepdefinitions.backend.CreacionDeUsuarioEnPetstoreStepDefinitions.laEstructuraDeLaRespuestaEsLaEsperada(CreacionDeUsuarioEnPetstoreStepDefinitions.java:57)
+	at ✽.la estructura de la respuesta es la esperada 'informacion_usuario' 'OK'(file:///C:/Users/yessica.rodriguez/Desktop/RetoComprasDevsu/RetoDevSu/src/test/resources/features/backend/creacion_de_usuario_en_petstore.feature:27)
+</failure>
+  </testcase>
+  <testcase name="003 - Validar que se pueda actualizar correctamente un usario desde el servicio API" classname="Creación y consulta de un usuario en la tienda Petstore" time="1.278">
+    <failure message="java.lang.AssertionError: 1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:353)
+	at co.com.devsu.certificacion.aplicativodecompras.stepdefinitions.backend.CreacionDeUsuarioEnPetstoreStepDefinitions.entoncesVeraElStatusConsumoExitoso(CreacionDeUsuarioEnPetstoreStepDefinitions.java:45)
+	at ✽.Entonces verá el status 'OK' consumo exitoso(file:///C:/Users/yessica.rodriguez/Desktop/RetoComprasDevsu/RetoDevSu/src/test/resources/features/backend/creacion_de_usuario_en_petstore.feature:40)
+</failure>
+  </testcase>
+  <testcase name="004 - Validar que se pueda eliminar correctamente un usario desde el servicio API" classname="Creación y consulta de un usuario en la tienda Petstore" time="1.288">
+    <failure message="java.lang.AssertionError: 1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:353)
+	at co.com.devsu.certificacion.aplicativodecompras.stepdefinitions.backend.CreacionDeUsuarioEnPetstoreStepDefinitions.entoncesVeraElStatusConsumoExitoso(CreacionDeUsuarioEnPetstoreStepDefinitions.java:45)
+	at ✽.Entonces verá el status 'OK' consumo exitoso(file:///C:/Users/yessica.rodriguez/Desktop/RetoComprasDevsu/RetoDevSu/src/test/resources/features/backend/creacion_de_usuario_en_petstore.feature:53)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
